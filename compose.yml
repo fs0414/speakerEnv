@@ -31,14 +31,14 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_DEV_DATABASE: ${POSTGRES_DEV_DATABASE}
 
-  # sidekiq:
-  #   container_name: se_sidekiq_container
-  #   build:
-  #     context: ./.docker/sidekiq/Dockerfile
-  #   volumes:
-  #     - .:/workspace
-  #   depends_on:
-  #     - redis
+  sidekiq:
+    container_name: se_sidekiq_container
+    build:
+      dockerfile: ./.docker/sidekiq/dockerfile
+    volumes:
+      - .:/workspace
+    depends_on:
+      - redis
 
   redis:
     container_name: se_redis_container

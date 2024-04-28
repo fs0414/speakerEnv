@@ -1,0 +1,11 @@
+FROM ruby:3.3.1-alpine
+
+RUN apk update -qq && apk add gcompat libpq-dev nodejs vim g++ make
+
+WORKDIR /workspace
+
+COPY ../ ../
+
+RUN bundle install
+
+CMD [ "bundle", "exec", "sidekiq", "-C", "config/sidekiq.yml"  ]
