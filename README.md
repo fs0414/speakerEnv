@@ -1,8 +1,24 @@
-### 雑コンセプト
-- 下記のスライド資料が投稿される
-  - なんらかの理由で公開に至らなかったスライド
-  - 公開できる品質に至らなかったスライド
-  - 完成スライドのボツ版
-- speakerDeckに投稿できないスライドのリサイクル
-- publicかprivateかは選べる
-- 資料としてその時に価値を出せなくても、あなたのアイデアやデザインには価値がありますよって
+# README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
