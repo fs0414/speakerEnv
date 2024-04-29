@@ -55,4 +55,5 @@ rails db:migrate
 | db | postgresql |
 | batch | sidekiq |
 | cache | redis |
+| production | render or fry.io |
 | local | docker |
