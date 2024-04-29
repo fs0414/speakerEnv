@@ -35,7 +35,7 @@ jobs:
       #     bundler-cache: true
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1.2' # 現在利用可能な最新の安定版Rubyに変更
+          ruby-version: '3.3.1' # 現在利用可能な最新の安定版Rubyに変更
           bundler-cache: true
       # Add or replace database setup steps here
       - name: Set up database schema
