@@ -38,7 +38,7 @@ rails db:migrate
 <img width="1036" alt="スクリーンショット 2024-04-29 12 45 39" src="https://github.com/fs0414/speakerEnv/assets/76100848/973e96ab-f0b6-42ba-a2a1-4a559ba5a51f">
 https://www.figma.com/file/Bm7wTqkY4bRsHYsDHGknrm/Untitled?type=whiteboard&node-id=0%3A1&t=pGrzNETbzCpMParo-1
 
-
+#### memo
 - 下記のスライド資料が投稿される
     - なんらかの理由で公開に至らなかったスライド
     - 公開できる品質に至らなかったスライド
