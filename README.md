@@ -46,3 +46,13 @@ rails db:migrate
       - 仕様に関する議論
     - enhancement
       - 新機能
+
+
+| actor | stack |
+| ---- | ---- |
+| app | rails |
+| slide host | s3 |
+| db | postgresql |
+| batch | sidekiq |
+| cache | redis |
+| local | docker |
