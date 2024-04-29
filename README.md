@@ -9,7 +9,17 @@ https://github.com/fs0414/speakerEnv
 3. container起動
 ```zsh
 docker compose up -d --build
+
+docker compose exec web sh
 ```
+
+4. db set
+```zsh
+rails db:create
+
+rails db:migrate
+```
+
 
 ### 雑コンセプト
 <img width="1036" alt="スクリーンショット 2024-04-29 12 45 39" src="https://github.com/fs0414/speakerEnv/assets/76100848/973e96ab-f0b6-42ba-a2a1-4a559ba5a51f">
