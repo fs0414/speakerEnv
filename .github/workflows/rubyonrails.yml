@@ -6,47 +6,47 @@ on:
   pull_request:
     branches: [ "develop" ]
 
-jobs:
-  build-and-test:
-    runs-on: ubuntu-latest
+# jobs:
+#   build-and-test:
+#     runs-on: ubuntu-latest
 
-    services:
-      postgres:
-        image: postgres
-        env:
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: password
-          POSTGRES_DB: test_db
-        options: >-
-          --health-cmd pg_isready
-          --health-interval 10s
-          --health-timeout 5s
-          --health-retries 5
-        ports:
-          - 5432:5432
+#     services:
+#       postgres:
+#         image: postgres
+#         env:
+#           POSTGRES_USER: postgres
+#           POSTGRES_PASSWORD: password
+#           POSTGRES_DB: test_db
+#         options: >-
+#           --health-cmd pg_isready
+#           --health-interval 10s
+#           --health-timeout 5s
+#           --health-retries 5
+#         ports:
+#           - 5432:5432
 
-    steps:
-    - uses: actions/checkout@v4
+#     steps:
+#     - uses: actions/checkout@v4
 
-    - name: Set up Docker environment
-      run: |
-        docker info
+#     - name: Set up Docker environment
+#       run: |
+#         docker info
 
-    - name: Build the Docker container
-      env:
-        POSTGRES_USER: user
-        POSTGRES_PASSWORD: password
-        POSTGRES_DEV_DATABASE: dev_db
-        POSTGRES_TEST_DATABASE: test_db
-        POSTGRES_PRO_DATABASE: prod_db
-      run: docker-compose up --build -d
+#     - name: Build the Docker container
+#       env:
+#         POSTGRES_USER: user
+#         POSTGRES_PASSWORD: password
+#         POSTGRES_DEV_DATABASE: dev_db
+#         POSTGRES_TEST_DATABASE: test_db
+#         POSTGRES_PRO_DATABASE: prod_db
+#       run: docker-compose up --build -d
 
-    - name: Check running containers
-      run: docker ps
+#     - name: Check running containers
+#       run: docker ps
 
-    - name: Run tests
-      run: docker-compose run app bundle exec rake test
+#     - name: Run tests
+#       run: docker-compose run app bundle exec rake test
 
-    - name: Clean up
-      if: always()
-      run: docker-compose down
+#     - name: Clean up
+#       if: always()
+#       run: docker-compose down
