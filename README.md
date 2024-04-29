@@ -15,7 +15,7 @@ https://www.figma.com/file/Bm7wTqkY4bRsHYsDHGknrm/Untitled?type=whiteboard&node-
 ## 環境構築
 1. clone
 ```zsh
-https://github.com/fs0414/speakerEnv
+git clone https://github.com/fs0414/speakerEnv.git
 ```
 
 2. env設定
