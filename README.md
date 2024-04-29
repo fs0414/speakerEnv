@@ -11,6 +11,8 @@ https://www.figma.com/file/Bm7wTqkY4bRsHYsDHGknrm/Untitled?type=whiteboard&node-
 - publicかprivateかは選べる
 - 資料としてその時に価値を出せなくても、あなたのアイデアやデザインには価値がありますよって
 - 投稿されるスライド自体をユーザーの利用価値とせず、そこから生まれるコミュニケーションを動機に使ってくれる状態が良い
+- 仮説に対する不確定要素
+  - どこにも使われなかったスライドってどのくらいあるのかが明確ではない 
 
 ## 環境構築
 1. clone
