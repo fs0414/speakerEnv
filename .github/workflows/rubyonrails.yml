@@ -31,6 +31,12 @@ jobs:
     - name: Set up Docker environment
       run: |
         docker info
+      env:
+        POSTGRES_USER: ${POSTGRES_USER}
+        POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+        POSTGRES_DEV_DATABASE: ${POSTGRES_DEV_DATABASE}
+        POSTGRES_TEST_DATABASE: ${POSTGRES_TEST_DATABASE}
+        POSTGRES_PRO_DATABASE: ${POSTGRES_PROD_DATABASE}
 
     - name: Build the Docker container
       run: docker-compose up --build -d
