@@ -34,11 +34,11 @@ jobs:
 
     - name: Build the Docker container
       env:
-        POSTGRES_USER: <%= ENV["POSTGRES_USER"] %>
-        POSTGRES_PASSWORD: <%= ENV["POSTGRES_PASSWORD"] %>
-        POSTGRES_DEV_DATABASE: <%= ENV["POSTGRES_DEV_DATABASE"] %>
-        POSTGRES_TEST_DATABASE: <%= ENV["POSTGRES_TEST_DATABASE"] %>
-        POSTGRES_PRO_DATABASE: <%= ENV["POSTGRES_PRO_DATABASE"] %>
+        POSTGRES_USER: user
+        POSTGRES_PASSWORD: password
+        POSTGRES_DEV_DATABASE: dev_db
+        POSTGRES_TEST_DATABASE: test_db
+        POSTGRES_PRO_DATABASE: prod_db
       run: docker-compose up --build -d
 
     - name: Check running containers
