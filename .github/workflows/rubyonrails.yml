@@ -31,14 +31,14 @@ jobs:
     - name: Set up Docker environment
       run: |
         docker info
+
+    - name: Build the Docker container
       env:
         POSTGRES_USER: <%= ENV["POSTGRES_USER"] %>
         POSTGRES_PASSWORD: <%= ENV["POSTGRES_PASSWORD"] %>
         POSTGRES_DEV_DATABASE: <%= ENV["POSTGRES_DEV_DATABASE"] %>
         POSTGRES_TEST_DATABASE: <%= ENV["POSTGRES_TEST_DATABASE"] %>
         POSTGRES_PRO_DATABASE: <%= ENV["POSTGRES_PRO_DATABASE"] %>
-
-    - name: Build the Docker container
       run: docker-compose up --build -d
 
     - name: Check running containers
