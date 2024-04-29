@@ -28,8 +28,10 @@ rails db:migrate
 ### issue
 - 基本的に全てissueを立ててから開発に入る
 　　- label
-     - design doc ~ 仕様に関する議論
-     - enhancement ~ 新機能
+     - design doc
+       - 仕様に関する議論
+     - enhancement
+       - 新機能
 
 
 ## 雑コンセプト
