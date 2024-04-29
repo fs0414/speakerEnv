@@ -1,4 +1,20 @@
+### 環境構築
+1. clone
+```zsh
+https://github.com/fs0414/speakerEnv
+```
+
+2. env設定
+    
+3. container起動
+```zsh
+docker compose up -d --build
+```
+
 ### 雑コンセプト
+<img width="1036" alt="スクリーンショット 2024-04-29 12 45 39" src="https://github.com/fs0414/speakerEnv/assets/76100848/973e96ab-f0b6-42ba-a2a1-4a559ba5a51f">
+https://www.figma.com/file/Bm7wTqkY4bRsHYsDHGknrm/Untitled?type=whiteboard&node-id=0%3A1&t=pGrzNETbzCpMParo-1
+
 
 - 下記のスライド資料が投稿される
     - なんらかの理由で公開に至らなかったスライド
@@ -8,3 +24,5 @@
 - publicかprivateかは選べる
 - 資料としてその時に価値を出せなくても、あなたのアイデアやデザインには価値がありますよって
 - 投稿されるスライド自体をユーザーの利用価値とせず、そこから生まれるコミュニケーションを動機に使ってくれる状態が良い
+
+
