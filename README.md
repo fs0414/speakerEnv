@@ -1,4 +1,4 @@
-### 環境構築
+## 環境構築
 1. clone
 ```zsh
 https://github.com/fs0414/speakerEnv
@@ -20,8 +20,19 @@ rails db:create
 rails db:migrate
 ```
 
+## 開発フロー
+### git flow
+- main, develop, feature
+- PRのreviewerは@fs0414に付ける
 
-### 雑コンセプト
+### issue
+- 基本的に全てissueを立ててから開発に入る
+　　- label
+     - design doc ~ 仕様に関する議論
+     - enhancement ~ 新機能
+
+
+## 雑コンセプト
 <img width="1036" alt="スクリーンショット 2024-04-29 12 45 39" src="https://github.com/fs0414/speakerEnv/assets/76100848/973e96ab-f0b6-42ba-a2a1-4a559ba5a51f">
 https://www.figma.com/file/Bm7wTqkY4bRsHYsDHGknrm/Untitled?type=whiteboard&node-id=0%3A1&t=pGrzNETbzCpMParo-1
 
