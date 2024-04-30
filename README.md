@@ -26,7 +26,7 @@ git clone https://github.com/fs0414/speakerEnv.git
 ```zsh
 docker compose up -d --build
 
-docker compose exec web sh
+docker compose exec app sh
 ```
 
 4. db set
